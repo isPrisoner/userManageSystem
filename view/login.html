@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>后台登录</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <!-- <script type="text/javascript" src="../static/js/index.js"></script> -->
 </head>
 
 <body class="bg-gray-100 flex items-center justify-center min-h-screen">
 <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
   <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">后台登录</h1>
-  <form>
+  <form id="loginForm">
     <!-- 用户名输入 -->
     <div class="mb-4">
       <label for="username" class="block text-sm font-medium text-gray-700">用户名</label>
@@ -40,6 +41,38 @@
     </div>
   </form>
 </div>
+<script>
+  document.getElementById('loginForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // 阻止表单默认提交行为
+
+    // 获取表单数据
+    const formData = new FormData(this);
+    const username = formData.get('username');
+    const password = formData.get('password');
+
+    // 使用Fetch API发送POST请求到后端
+    fetch('login', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`,
+    })
+            .then(response => response.json()) // 将响应体解析为JSON
+            .then(data => {
+              // 显示alert
+              alert(data.msg);
+              // 如果登录成功，可以在这里进行页面跳转
+              if (data.status === 200) {
+                window.location.href = '/index'; // 假设登录成功后跳转到index页面
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              alert('请求失败，请稍后再试');
+            });
+  });
+</script>
 </body>
 
 </html>

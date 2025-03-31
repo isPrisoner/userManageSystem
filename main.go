@@ -16,7 +16,7 @@ func login(res http.ResponseWriter, req *http.Request) {
 }
 
 func userList(res http.ResponseWriter, req *http.Request) {
-	files, _ := template.ParseFiles("view/userList.html")
+	files, _ := template.ParseFiles("view/userList.gtpl")
 	files.Execute(res, 123)
 }
 
