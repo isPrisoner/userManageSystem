@@ -1,0 +1,167 @@
+ERROR：2025/03/31 15:13:28 userModel.go:30: Error 1054 (42S22): Unknown column 'delete_id' in 'where clause'
+ERROR：2025/03/31 15:13:28 userModel.go:30: Error 1054 (42S22): Unknown column 'delete_id' in 'where clause'
+ERROR：2025/03/31 15:13:29 userModel.go:30: Error 1054 (42S22): Unknown column 'delete_id' in 'where clause'
+ERROR：2025/03/31 15:23:42 userModel.go:48: Error 1054 (42S22): Unknown column 'delete_id' in 'where clause'
+ERROR：2025/03/31 15:23:42 userModel.go:48: Error 1054 (42S22): Unknown column 'delete_id' in 'where clause'
+ERROR：2025/03/31 15:23:42 userModel.go:48: Error 1054 (42S22): Unknown column 'delete_id' in 'where clause'
+ERROR：2025/04/05 11:13:18 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:13:18 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:13:28 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:13:28 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:13:41 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:13:41 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:14:39 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:14:39 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:15:41 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:15:41 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:15:44 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:15:44 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:17:00 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:17:00 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:17:03 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:17:03 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:20:05 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:20:05 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:20:54 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:20:54 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:21:46 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:21:46 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:23:07 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:23:07 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:24:40 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:24:40 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:24:47 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:24:47 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:28:13 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:28:13 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:29:09 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:29:09 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 11:29:13 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 11:29:13 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:29:43 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:29:43 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:30:02 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:30:02 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:30:13 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:30:13 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:35:24 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:35:24 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:35:49 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:35:49 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:36:19 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:36:19 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:39:20 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:39:20 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:39:24 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:39:24 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:39:27 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:39:27 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:40:17 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:40:17 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:41:09 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:41:09 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:42:24 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:42:24 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:43:05 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:43:05 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:43:15 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:43:15 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:44:23 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:44:23 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:45:38 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:45:38 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:46:44 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:46:44 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:48:10 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:48:10 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:48:41 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:48:41 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:50:01 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:50:01 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:50:22 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:50:22 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:50:43 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:50:43 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:51:06 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:51:06 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:51:40 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:51:40 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/05 14:53:56 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/05 14:53:56 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/07 16:55:30 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/07 16:55:30 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/07 17:21:40 roleModel.go:14: Error 1146 (42S02): Table 'user_admin.role' doesn't exist
+ERROR：2025/04/07 17:21:40 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/07 17:42:28 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 17:44:02 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 17:44:23 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:29:04 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:29:05 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:29:07 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:29:23 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:32:09 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:32:57 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:35:49 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:36:17 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 19:59:33 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:09:27 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:09:59 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:11:02 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:11:02 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:11:41 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:11:41 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:12:09 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:12:09 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:12:25 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:12:25 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:12:34 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:12:34 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:12:57 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:12:57 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:13:54 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:13:54 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:14:13 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:14:13 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:20:54 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:20:54 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:30:21 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:30:34 roleModel.go:18: sql: no rows in result set
+ERROR：2025/04/07 20:34:56 handler.go:144: Failed to execute template: write tcp [::1]:8090->[::1]:60517: wsasend: An established connection was aborted by the software in your host machine.
+ERROR：2025/04/07 21:19:11 uploadService.go:45: Failed to write file: open /images/6_wVei5Q==.png: The system cannot find the path specified.
+ERROR：2025/04/07 21:19:39 uploadService.go:45: Failed to write file: open /images/6_zfm3XA==.png: The system cannot find the path specified.
+ERROR：2025/04/07 21:20:03 uploadService.go:45: Failed to write file: open /images/6_eQGJaQ==.png: The system cannot find the path specified.
+ERROR：2025/04/07 21:22:25 uploadService.go:45: Failed to write file: open /images/6_H7uo-w==.png: The system cannot find the path specified.
+ERROR：2025/04/07 21:23:54 uploadService.go:45: Failed to write file: open /images/6_LCbwcQ==.png: The system cannot find the path specified.
+ERROR：2025/04/07 21:24:21 uploadService.go:45: Failed to write file: open /images/6_a5zc9w==.png: The system cannot find the path specified.
+ERROR：2025/04/07 21:24:26 uploadService.go:45: Failed to write file: open /images/6_LPGUuQ==.png: The system cannot find the path specified.
+ERROR：2025/04/08 08:21:20 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:21:26 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:22:19 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:23:10 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:26:39 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:26:42 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:26:55 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:27:01 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:31:47 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:33:00 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 08:52:04 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 09:51:03 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 09:52:16 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 09:53:26 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 09:54:42 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 09:56:00 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 09:57:38 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 09:58:32 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 09:59:26 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 10:08:41 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 10:13:08 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 10:15:20 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 10:22:22 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 14:39:20 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 14:39:48 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 14:41:39 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 14:44:26 uploadService.go:78: 删除文件失败 remove /images/3.jpg: The system cannot find the path specified.
+ERROR：2025/04/08 14:45:42 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 14:46:11 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 14:46:17 middleware.go:46: runtime error: invalid memory address or nil pointer dereference
+ERROR：2025/04/08 15:01:29 uploadService.go:73: 删除文件失败 remove /images/18.jpg: The system cannot find the path specified.

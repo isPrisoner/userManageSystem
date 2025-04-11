@@ -37,7 +37,10 @@
 
     <!-- 忘记密码链接 -->
     <div class="mt-4 text-center">
-      <a href="#" class="text-sm text-blue-600 hover:text-blue-500">忘记密码？</a>
+      <a href="#" id="forgotPassword" class="text-sm text-blue-600 hover:text-blue-500">忘记密码？</a>
+    </div>
+    <div class="mt-4 text-center">
+      <a href="/sign_up" class="text-sm text-blue-600 hover:text-blue-500">没有账号？立即注册</a>
     </div>
   </form>
 </div>
@@ -51,7 +54,7 @@
     const password = formData.get('password');
 
     // 使用Fetch API发送POST请求到后端
-    fetch('login', {
+    fetch('/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
@@ -71,6 +74,74 @@
               console.error('Error:', error);
               alert('请求失败，请稍后再试');
             });
+  });
+
+  // 忘记密码点击事件
+  document.getElementById('forgotPassword').addEventListener('click', function (e) {
+    e.preventDefault(); // 阻止默认行为
+
+    // 获取原表单中的用户名
+    const username = document.getElementById('username').value;
+
+    if (!username) {
+      alert('请输入用户名');
+      return;
+    }
+
+    // 创建邮箱输入框容器
+    const emailContainer = document.createElement('div');
+    emailContainer.className = 'mt-6';
+
+    // 创建邮箱输入框
+    const emailInput = document.createElement('div');
+    emailInput.className = 'mb-4';
+    emailInput.innerHTML = `
+        <label for="email" class="block text-sm font-medium text-gray-700">请输入您的邮箱</label>
+        <input type="email" id="email" name="email" placeholder="请输入您的邮箱"
+            class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+            required />
+    `;
+
+    // 创建提交按钮
+    const submitButton = document.createElement('button');
+    submitButton.type = 'button';
+    submitButton.className = 'w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2';
+    submitButton.textContent = '查询密码';
+
+    // 添加事件监听器
+    submitButton.addEventListener('click', function () {
+      const email = document.getElementById('email').value;
+
+      if (!email) {
+        alert('请输入您的邮箱');
+        return;
+      }
+
+      // 使用Fetch API发送POST请求到后端
+      fetch('/forgot-password', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `username=${encodeURIComponent(username)}&email=${encodeURIComponent(email)}`,
+      })
+              .then(response => response.json())
+              .then(data => {
+                alert(data.msg);
+              })
+              .catch(error => {
+                console.error('Error:', error);
+                alert('请求失败，请稍后再试');
+              });
+    });
+
+    // 将邮箱输入框和按钮添加到容器
+    emailContainer.appendChild(emailInput);
+    emailContainer.appendChild(submitButton);
+
+    // 将容器添加到登录表单的末尾
+    const loginForm = document.getElementById('loginForm');
+    loginForm.appendChild(emailContainer);
   });
 </script>
 </body>

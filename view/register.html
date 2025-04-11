@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>用户注册</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+<div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+  <h1 class="text-2xl font-bold text-center text-gray-800 mb-6">用户注册</h1>
+  <form id="registerForm">
+    <!-- 用户名输入 -->
+    <div class="mb-4">
+      <label for="username" class="block text-sm font-medium text-gray-700">用户名</label>
+      <input type="text" id="username" name="username" placeholder="请输入用户名"
+             class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+             required />
+    </div>
+
+    <!-- 密码输入 -->
+    <div class="mb-4">
+      <label for="password" class="block text-sm font-medium text-gray-700">密码</label>
+      <input type="password" id="password" name="password" placeholder="请输入密码"
+             class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+             required />
+    </div>
+
+    <!-- 确认密码输入 -->
+    <div class="mb-4">
+      <label for="confirmPassword" class="block text-sm font-medium text-gray-700">确认密码</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" placeholder="请再次输入密码"
+             class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+             required />
+    </div>
+
+    <!-- 邮箱输入 -->
+    <div class="mb-6">
+      <label for="email" class="block text-sm font-medium text-gray-700">邮箱</label>
+      <input type="email" id="email" name="email" placeholder="请输入邮箱"
+             class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+             required />
+    </div>
+
+    <!-- 头像上传 -->
+    <div class="mb-6">
+      <label for="avatar" class="block text-sm font-medium text-gray-700">头像(可选)</label>
+      <input type="file" id="avatar" name="avatar" accept="image/*"
+             class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+      />
+      <div id="avatarPreview" class="mt-2 flex justify-center">
+        <img id="previewImage" class="w-24 h-24 rounded-full object-cover" src="" alt="头像预览">
+      </div>
+    </div>
+
+    <!-- 注册按钮 -->
+    <button type="submit"
+            class="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2">
+      注册
+    </button>
+  </form>
+</div>
+
+<script>
+  // 头像预览功能
+  document.getElementById('avatar').addEventListener('change', function (e) {
+    const file = e.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onload = function (event) {
+        document.getElementById('previewImage').src = event.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+
+  document.getElementById('registerForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // 阻止表单默认提交行为
+
+    // 获取表单数据
+    const formData = new FormData(this);
+    const username = formData.get('username');
+    const password = formData.get('password');
+    const confirmPassword = formData.get('confirmPassword');
+    const email = formData.get('email');
+    const avatar = formData.get('avatar');
+
+    // 验证用户名格式（只能是英文字母、中文或两者的结合）
+    const usernamePattern = /^[a-zA-Z\u4e00-\u9fa5]+$/;
+    if (!usernamePattern.test(username)) {
+      alert('用户名必须是英文字母、中文或两者的结合');
+      return;
+    }
+
+    // 验证密码是否包含数字和英文字母，且不包含特殊字符
+    const passwordPattern = /^(?=.*[a-zA-Z])(?=.*\d)[a-zA-Z\d]{8,}$/;
+    if (!passwordPattern.test(password)) {
+      alert('密码必须包含数字和英文字母，且长度至少为8位');
+      return;
+    }
+
+    // 验证两次密码是否一致
+    if (password !== confirmPassword) {
+      alert('两次输入的密码不一致，请重新输入');
+      return;
+    }
+
+    // 从FormData中移除confirmPassword字段
+    formData.delete('confirmPassword');
+
+    // 使用Fetch API发送POST请求到后端
+    fetch('/register', {
+      method: 'POST',
+      body: formData,
+    })
+            .then(response => response.json()) // 将响应体解析为JSON
+            .then(data => {
+              // 显示alert
+              alert(data.msg);
+              // 如果注册成功，跳转到根路径
+              if (data.status === 200) {
+                window.location.href = '/'; // 跳转到根路径
+              }
+            })
+            .catch(error => {
+              console.error('Error:', error);
+              alert('请求失败，请稍后再试');
+            });
+  });
+</script>
+</body>
+
+</html>

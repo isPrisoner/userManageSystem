@@ -49,17 +49,15 @@
   <nav>
     <ul class="space-y-2">
       <li>
-        <a href="index" class="flex items-center p-2 hover:bg-gray-700 rounded">
+        <a href="/index" class="flex items-center p-2 hover:bg-gray-700 rounded">
           <i data-feather="home" class="w-4 h-4 mr-2"></i> 首页概览
         </a>
       </li>
-      {{ if eq .Role "管理员"}}
       <li>
-        <a href="userList?page=1&page_size=10" class="flex items-center p-2 hover:bg-gray-700 rounded">
+        <a href="/userList/1/10" class="flex items-center p-2 hover:bg-gray-700 rounded">
           <i data-feather="users" class="w-4 h-4 mr-2"></i> 用户管理
         </a>
       </li>
-      {{end}}
       <!-- 更多菜单项... -->
     </ul>
   </nav>
@@ -74,7 +72,7 @@
         <i data-feather="bell"></i>
       </button>
       <div class="flex items-center gap-2">
-        <img src="{{.Image}}" class="w-8 h-8 rounded-full">
+        <img src="{{.}}" class="w-8 h-8 rounded-full">
         <button onclick="logout()" class="text-red-600 hover:text-red-700 flex items-center gap-1">
           <i data-feather="log-out" class="w-5 h-5"></i>
           <span class="hidden sm:inline">退出系统</span>
@@ -220,7 +218,7 @@
       visitChart.update();
 
       // 模拟AJAX请求
-      fetch(`/get_visit_data?days=${days}`)
+      fetch(`/get_visit_data/${days}`)
               .then(response => response.json())
               .then(data => {
                 visitChart.data.labels = data.data.days;

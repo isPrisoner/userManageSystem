@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="3f66cc7f-c119-4d49-9322-462f25a9d512" name="更改" comment="整体前端页面和前端连接后端的端口API">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/userList.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/userList.gtpl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/view/userList.gtpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/userList.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,17 +36,18 @@
     &quot;assignee&quot;: &quot;isPrisoner&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "git@github.com:isPrisoner/userManageSystem.git",
-    "accountId": "9e90d500-26ad-412d-8365-65cb6a5508dd"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:isPrisoner/userManageSystem.git&quot;,
+    &quot;accountId&quot;: &quot;9e90d500-26ad-412d-8365-65cb6a5508dd&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/handlers/handlers.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/main.go" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/view/index.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/view/login.html" root0="SKIP_INSPECTION" />
-    <setting file="file://$PROJECT_DIR$/view/userList.html" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/view/login.html" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/view/register.html" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -59,34 +61,53 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultGoTemplateProperty": "Go File",
-    "DefaultHtmlFileTemplate": "HTML File",
-    "Go 构建.go build userManageSystem.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.go.formatter.settings.were.checked": "true",
-    "RunOnceActivity.go.migrated.go.modules.settings": "true",
-    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
-    "git-widget-placeholder": "main",
-    "go.import.settings.migrated": "true",
-    "last_opened_file_path": "D:/Go/userManageSystem",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "D:/Go/userManageSystem/main.go"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultGoTemplateProperty&quot;: &quot;Go File&quot;,
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;Go 构建.go build userManageSystem (1).executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build userManageSystem.executor&quot;: &quot;Run&quot;,
+    &quot;Go 构建.go build userManageSystem/123.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.formatter.settings.were.checked&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.migrated.go.modules.settings&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.go.modules.go.list.on.any.changes.was.set&quot;: &quot;true&quot;,
+    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Go/userAdminRestful&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Go/userManageSystem/main.go&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
+    ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Go\userManageSystem" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Go\userManageSystem" />
+      <recent name="D:\Go\userManageSystem\utils" />
+      <recent name="D:\Go\userManageSystem\service" />
+      <recent name="D:\Go\userManageSystem\models" />
+      <recent name="D:\Go\userManageSystem\middlewares" />
+      <recent name="D:\Go\userManageSystem\logs" />
     </key>
   </component>
   <component name="RunManager">
-    <configuration name="go build userManageSystem" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build userManageSystem" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true">
       <module name="userManageSystem" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />

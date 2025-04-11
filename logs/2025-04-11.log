@@ -1,0 +1,54 @@
+INFO：2025/04/11 17:01:43 userModel.go:133: select status from user where username = 'admin' and password = 'admin123' and delete_status <> 1
+INFO：2025/04/11 17:01:43 userModel.go:81: update user set last_login = '2025-04-11 17:01:43' where username = 'admin' and delete_status <> 1
+INFO：2025/04/11 17:01:43 userModel.go:211: select session_id from user where username = 'admin' and delete_status <> 1
+INFO：2025/04/11 17:01:43 loginModel.go:21: insert into login(visit_time) values ('2025-04-11 17:01:43')
+INFO：2025/04/11 17:01:44 userModel.go:232: select image from user where session_id = 'llUhBkC31biregjw_CR-XrKhbSTQc_gSail3uHvk85U%3D'
+INFO：2025/04/11 17:01:44 userModel.go:185: select count(*) from user where month(register_time) = 4
+INFO：2025/04/11 17:01:44 loginModel.go:46: select count(*) from login where month(visit_time) = 4
+INFO：2025/04/11 17:01:44 userModel.go:198: select count(*) from user where month(delete_time) = 4
+INFO：2025/04/11 17:01:44 loginModel.go:46: select count(*) from login where month(visit_time) = 3
+INFO：2025/04/11 17:01:44 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-11'
+INFO：2025/04/11 17:01:44 userModel.go:185: select count(*) from user where month(register_time) = 3
+INFO：2025/04/11 17:01:44 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-10'
+INFO：2025/04/11 17:01:44 userModel.go:198: select count(*) from user where month(delete_time) = 3
+INFO：2025/04/11 17:01:44 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-09'
+INFO：2025/04/11 17:01:44 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-08'
+INFO：2025/04/11 17:01:44 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-07'
+INFO：2025/04/11 17:01:44 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-06'
+INFO：2025/04/11 17:01:44 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-05'
+INFO：2025/04/11 17:01:47 userModel.go:232: select image from user where session_id = 'llUhBkC31biregjw_CR-XrKhbSTQc_gSail3uHvk85U%3D'
+INFO：2025/04/11 17:01:47 userModel.go:185: select count(*) from user where month(register_time) = 4
+INFO：2025/04/11 17:01:47 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-11'
+INFO：2025/04/11 17:01:47 loginModel.go:46: select count(*) from login where month(visit_time) = 4
+INFO：2025/04/11 17:01:47 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-10'
+INFO：2025/04/11 17:01:47 userModel.go:198: select count(*) from user where month(delete_time) = 4
+INFO：2025/04/11 17:01:47 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-09'
+INFO：2025/04/11 17:01:47 loginModel.go:46: select count(*) from login where month(visit_time) = 3
+INFO：2025/04/11 17:01:47 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-08'
+INFO：2025/04/11 17:01:47 userModel.go:185: select count(*) from user where month(register_time) = 3
+INFO：2025/04/11 17:01:47 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-07'
+INFO：2025/04/11 17:01:47 userModel.go:198: select count(*) from user where month(delete_time) = 3
+INFO：2025/04/11 17:01:47 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-06'
+INFO：2025/04/11 17:01:47 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-05'
+INFO：2025/04/11 17:01:48 userModel.go:146: select count(*) from user where delete_status <> 1
+INFO：2025/04/11 17:01:48 userModel.go:284: select image,username, role, email, status, last_login from user where delete_status <> 1 limit 0,10
+INFO：2025/04/11 17:01:48 userModel.go:120: select role from user where session_id = 'llUhBkC31biregjw_CR-XrKhbSTQc_gSail3uHvk85U%3D' and delete_status <> 1
+INFO：2025/04/11 17:01:48 userModel.go:232: select image from user where session_id = 'llUhBkC31biregjw_CR-XrKhbSTQc_gSail3uHvk85U%3D'
+INFO：2025/04/11 17:01:49 userModel.go:232: select image from user where session_id = 'llUhBkC31biregjw_CR-XrKhbSTQc_gSail3uHvk85U%3D'
+INFO：2025/04/11 17:01:49 userModel.go:185: select count(*) from user where month(register_time) = 4
+INFO：2025/04/11 17:01:49 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-11'
+INFO：2025/04/11 17:01:49 loginModel.go:46: select count(*) from login where month(visit_time) = 4
+INFO：2025/04/11 17:01:49 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-10'
+INFO：2025/04/11 17:01:49 userModel.go:198: select count(*) from user where month(delete_time) = 4
+INFO：2025/04/11 17:01:49 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-09'
+INFO：2025/04/11 17:01:49 loginModel.go:46: select count(*) from login where month(visit_time) = 3
+INFO：2025/04/11 17:01:49 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-08'
+INFO：2025/04/11 17:01:49 userModel.go:185: select count(*) from user where month(register_time) = 3
+INFO：2025/04/11 17:01:49 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-07'
+INFO：2025/04/11 17:01:49 userModel.go:198: select count(*) from user where month(delete_time) = 3
+INFO：2025/04/11 17:01:49 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-06'
+INFO：2025/04/11 17:01:49 loginModel.go:33: select count(*) from login where date(visit_time) = '2025-04-05'
+INFO：2025/04/11 17:02:02 userModel.go:146: select count(*) from user where delete_status <> 1
+INFO：2025/04/11 17:02:02 userModel.go:284: select image,username, role, email, status, last_login from user where delete_status <> 1 limit 0,10
+INFO：2025/04/11 17:02:02 userModel.go:120: select role from user where session_id = 'llUhBkC31biregjw_CR-XrKhbSTQc_gSail3uHvk85U%3D' and delete_status <> 1
+INFO：2025/04/11 17:02:02 userModel.go:232: select image from user where session_id = 'llUhBkC31biregjw_CR-XrKhbSTQc_gSail3uHvk85U%3D'

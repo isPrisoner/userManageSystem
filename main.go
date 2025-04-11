@@ -1,29 +1,41 @@
 package main
 
 import (
-	"html/template"
+	"github.com/gorilla/mux"
+	"log"
 	"net/http"
+	"userManageSystem/handlers"
+	"userManageSystem/middlewares"
+	"userManageSystem/utils"
 )
 
-func index(res http.ResponseWriter, req *http.Request) {
-	files, _ := template.ParseFiles("view/index.html")
-	files.Execute(res, 123)
-}
-
-func login(res http.ResponseWriter, req *http.Request) {
-	files, _ := template.ParseFiles("view/login.html")
-	files.Execute(res, 123)
-}
-
-func userList(res http.ResponseWriter, req *http.Request) {
-	files, _ := template.ParseFiles("view/userList.gtpl")
-	files.Execute(res, 123)
-}
-
 func main() {
-	server := http.Server{Addr: ":8090"}
-	http.HandleFunc("/index.html", index)
-	http.HandleFunc("/login.html", login)
-	http.HandleFunc("/userList.html", userList)
-	server.ListenAndServe()
+	router := mux.NewRouter()
+	router.Use(middlewares.BindMiddleware())
+
+	go utils.Log()
+
+	// 加载静态文件
+	router.PathPrefix("/images/").
+		Handler(http.StripPrefix("/images/",
+			http.FileServer(http.Dir("images/"))))
+	// 注册路由
+	router.HandleFunc("/", handlers.Welcome)
+	router.HandleFunc("/login", handlers.Login)
+	router.HandleFunc("/index", handlers.Index)
+	router.HandleFunc("/userList/{page}/{page_size}", handlers.UserList)
+	router.HandleFunc("/userList/{page}/{page_size}/{status:[0-9]+}", handlers.UserList)
+	router.HandleFunc("/userList/{page}/{page_size}/{username}", handlers.UserList)
+	router.HandleFunc("/logout", handlers.Logout)
+	router.HandleFunc("/register", handlers.Register)
+	router.HandleFunc("/delete", handlers.Delete)
+	router.HandleFunc("/edit/{id:[0-9]+}", handlers.Edit)
+	router.HandleFunc("/edit/{username}", handlers.Edit)
+	router.HandleFunc("/get_visit_data/{days}", handlers.GetVisitData)
+	router.HandleFunc("/stats_data", handlers.StatusData)
+	router.HandleFunc("/forgot-password", handlers.Forgot)
+	router.HandleFunc("/sign_up", handlers.RegisterPage)
+
+	log.Println("服务器启动，监听端口 8090")
+	log.Fatal(http.ListenAndServe(":8090", router))
 }
