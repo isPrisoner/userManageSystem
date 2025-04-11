@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f66cc7f-c119-4d49-9322-462f25a9d512" name="更改" comment="整体前端页面和前端连接后端的端口API">
+    <list default="true" id="3f66cc7f-c119-4d49-9322-462f25a9d512" name="更改" comment="完结简易用户管理系统基本功能已实现">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/view/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/userList.gtpl" beforeDir="false" afterPath="$PROJECT_DIR$/view/userList.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -148,7 +145,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="goWeb实现简易用户管理系统&#10;创建go框架和前端页面" />
     <MESSAGE value="整体前端页面和前端连接后端的端口API" />
-    <option name="LAST_COMMIT_MESSAGE" value="整体前端页面和前端连接后端的端口API" />
+    <MESSAGE value="完结简易用户管理系统基本功能已实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="完结简易用户管理系统基本功能已实现" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

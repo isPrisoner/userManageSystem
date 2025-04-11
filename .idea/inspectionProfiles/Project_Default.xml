@@ -43,6 +43,7 @@
         <method importPath="database/sql" receiver="*Stmt" name="Query" />
         <method importPath="database/sql" receiver="*Stmt" name="Exec" />
         <method importPath="database/sql" receiver="*Rows" name="Scan" />
+        <method importPath="os" receiver="*File" name="Close" />
       </methods>
     </inspection_tool>
     <inspection_tool class="HtmlUnknownAttribute" enabled="true" level="WARNING" enabled_by_default="true">
