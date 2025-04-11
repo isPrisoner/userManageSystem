@@ -1018,8 +1018,8 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="295" parent="1" name="performance_schema">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <schema id="296" parent="1" name="usermanagesystem">
-      <LastIntrospectionLocalTimestamp>2025-04-04.03:28:56</LastIntrospectionLocalTimestamp>
+    <schema id="296" parent="1" name="user_admin">
+      <LastIntrospectionLocalTimestamp>2025-04-11.09:29:48</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <user id="297" parent="1" name="mysql.infoschema">
@@ -1040,22 +1040,21 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <user id="300" parent="1" name="root">
       <Host>localhost</Host>
     </user>
-    <table id="301" parent="296" name="index_visits">
+    <table id="301" parent="296" name="login">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <table id="302" parent="296" name="users">
+    <table id="302" parent="296" name="user">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
     <column id="303" parent="301" name="id">
-      <AutoIncrement>1</AutoIncrement>
+      <AutoIncrement>90</AutoIncrement>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StoredType>int|0s</StoredType>
+      <StoredType>int unsigned|0s</StoredType>
     </column>
     <column id="304" parent="301" name="visit_time">
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <Position>2</Position>
       <StoredType>timestamp|0s</StoredType>
     </column>
@@ -1070,79 +1069,89 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
     <column id="307" parent="302" name="id">
-      <AutoIncrement>6</AutoIncrement>
+      <AutoIncrement>12</AutoIncrement>
+      <Comment>用户id</Comment>
       <NotNull>1</NotNull>
       <Position>1</Position>
-      <StoredType>int|0s</StoredType>
+      <StoredType>int unsigned|0s</StoredType>
     </column>
     <column id="308" parent="302" name="username">
+      <Comment>用户名</Comment>
       <NotNull>1</NotNull>
       <Position>2</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <column id="309" parent="302" name="password">
+      <Comment>用户密码</Comment>
       <NotNull>1</NotNull>
       <Position>3</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>varchar(20)|0s</StoredType>
     </column>
     <column id="310" parent="302" name="email">
+      <Comment>用户邮箱</Comment>
       <Position>4</Position>
       <StoredType>varchar(255)|0s</StoredType>
     </column>
-    <column id="311" parent="302" name="role">
-      <DefaultExpression>&apos;普通用户&apos;</DefaultExpression>
+    <column id="311" parent="302" name="image">
+      <Comment>用户头像</Comment>
       <NotNull>1</NotNull>
       <Position>5</Position>
-      <StoredType>enum(&apos;管理员&apos;, &apos;普通用户&apos;)|0e</StoredType>
+      <StoredType>varchar(225)|0s</StoredType>
     </column>
-    <column id="312" parent="302" name="avatar">
+    <column id="312" parent="302" name="status">
+      <Comment>用户状态</Comment>
+      <NotNull>1</NotNull>
       <Position>6</Position>
-      <StoredType>varchar(255)|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="313" parent="302" name="status">
-      <DefaultExpression>1</DefaultExpression>
+    <column id="313" parent="302" name="delete_status">
+      <Comment>是否删除</Comment>
+      <DefaultExpression>0</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>7</Position>
-      <StoredType>tinyint(1)|0s</StoredType>
+      <StoredType>int|0s</StoredType>
     </column>
-    <column id="314" parent="302" name="last_login">
-      <DefaultExpression>(now())</DefaultExpression>
+    <column id="314" parent="302" name="role">
+      <Comment>用户身份</Comment>
+      <DefaultExpression>&apos;普通用户&apos;</DefaultExpression>
       <Position>8</Position>
-      <StoredType>datetime|0s</StoredType>
+      <StoredType>varchar(10)|0s</StoredType>
     </column>
-    <column id="315" parent="302" name="created_at">
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
+    <column id="315" parent="302" name="session_id">
+      <Comment>sessionID</Comment>
       <Position>9</Position>
-      <StoredType>datetime|0s</StoredType>
+      <StoredType>varchar(225)|0s</StoredType>
     </column>
-    <column id="316" parent="302" name="updated_at">
-      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
-      <OnUpdate>CURRENT_TIMESTAMP</OnUpdate>
+    <column id="316" parent="302" name="last_login">
+      <Comment>当前时间</Comment>
       <Position>10</Position>
       <StoredType>timestamp|0s</StoredType>
     </column>
-    <column id="317" parent="302" name="is_logged_in">
-      <DefaultExpression>0</DefaultExpression>
+    <column id="317" parent="302" name="register_time">
+      <Comment>注册时间</Comment>
+      <DefaultExpression>CURRENT_TIMESTAMP</DefaultExpression>
       <Position>11</Position>
-      <StoredType>tinyint(1)|0s</StoredType>
+      <StoredType>timestamp|0s</StoredType>
     </column>
-    <index id="318" parent="302" name="PRIMARY">
+    <column id="318" parent="302" name="delete_time">
+      <Comment>删除时间</Comment>
+      <Position>12</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <column id="319" parent="302" name="edit_time">
+      <Comment>修改时间</Comment>
+      <Position>13</Position>
+      <StoredType>timestamp|0s</StoredType>
+    </column>
+    <index id="320" parent="302" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="319" parent="302" name="username">
-      <ColNames>username</ColNames>
-      <Type>btree</Type>
-      <Unique>1</Unique>
-    </index>
-    <key id="320" parent="302" name="PRIMARY">
+    <key id="321" parent="302" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
-    </key>
-    <key id="321" parent="302" name="username">
-      <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
   </database-model>
 </dataSource>

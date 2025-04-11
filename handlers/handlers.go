@@ -71,6 +71,28 @@ func RegisterPage(w http.ResponseWriter, r *http.Request) {
 
 func Delete(w http.ResponseWriter, r *http.Request) {
 	username := r.URL.Query().Get("username")
+
+	// 获取当前用户的 sessionID
+	sessionID, err := r.Cookie("sessionID")
+	if err != nil {
+		msg := utils.Lose(nil, "未登录，无法执行删除操作")
+		data, _ := json.Marshal(msg)
+		w.Write(data)
+		return
+	}
+
+	// 根据 sessionID 获取当前用户的用户名
+	currentUsername := service.GetUsernameBySessionID(sessionID.Value)
+
+	// 判断要删除的用户是否为当前用户
+	if username == currentUsername {
+		msg := utils.Lose(nil, "不能删除自己的账户")
+		data, _ := json.Marshal(msg)
+		w.Write(data)
+		return
+	}
+
+	// 执行正常的删除操作
 	msg := service.DeleteUser(username)
 	data, _ := json.Marshal(msg)
 	w.Write(data)

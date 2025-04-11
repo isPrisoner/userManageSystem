@@ -93,3 +93,12 @@ func Password(username, email string) *utils.Message {
 	log.Println(password)
 	return utils.Ok(nil, "密码已发送至邮箱请查看")
 }
+
+func GetUsernameBySessionID(sessionID string) string {
+	res := models.GetUsernameBySessionID(sessionID)
+	var username string
+	for res.Next() {
+		res.Scan(&username)
+	}
+	return username
+}

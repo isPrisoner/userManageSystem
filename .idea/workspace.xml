@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f66cc7f-c119-4d49-9322-462f25a9d512" name="更改" comment="完结简易用户管理系统基本功能已实现">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="3f66cc7f-c119-4d49-9322-462f25a9d512" name="更改" comment="如何下载此系统并成功运行">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad9df2da-57e7-4111-aa04-2301b62c131c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad9df2da-57e7-4111-aa04-2301b62c131c.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad9df2da-57e7-4111-aa04-2301b62c131c/storage_v2/_src_/schema/usermanagesystem.H0NnFA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad9df2da-57e7-4111-aa04-2301b62c131c/storage_v2/_src_/schema/usermanagesystem.H0NnFA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/handlers.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/2025-04-11.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2025-04-11.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/userModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/userModel.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/service/userService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/userService.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,7 +153,8 @@
     <MESSAGE value="goWeb实现简易用户管理系统&#10;创建go框架和前端页面" />
     <MESSAGE value="整体前端页面和前端连接后端的端口API" />
     <MESSAGE value="完结简易用户管理系统基本功能已实现" />
-    <option name="LAST_COMMIT_MESSAGE" value="完结简易用户管理系统基本功能已实现" />
+    <MESSAGE value="如何下载此系统并成功运行" />
+    <option name="LAST_COMMIT_MESSAGE" value="如何下载此系统并成功运行" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>

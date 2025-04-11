@@ -2,7 +2,7 @@
 
 该系统用到的数据库是MySQL8.0，需要用到数据库中两个表结构，建表语句奉上：
 
-use usermanagesystem;
+use user_admin;
 
 CREATE TABLE IF NOT EXISTS users (
 id INT PRIMARY KEY AUTO_INCREMENT,

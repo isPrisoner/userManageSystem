@@ -310,3 +310,16 @@ func QueryPageByName(limit, offset int, username string) *sql.Rows {
 	utils.INFO.Printf("select image,username, role, email, status, last_login from user where username like '%s' and delete_status <> 1 limit %d,%d", "%"+username+"%", (limit-1)*offset, offset)
 	return res
 }
+
+func GetUsernameBySessionID(sessionID string) *sql.Rows {
+	db := utils.InitDB()
+	stmt, err := db.Prepare("select username from user where session_id = ? and delete_status <> 1")
+	defer stmt.Close()
+	defer db.Close()
+	if err != nil {
+		utils.ERROR.Println(err)
+	}
+	res, _ := stmt.Query(sessionID)
+	utils.INFO.Printf("select username from user where session_id = '%s' and delete_status <> 1", sessionID)
+	return res
+}
