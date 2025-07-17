@@ -4,17 +4,11 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f66cc7f-c119-4d49-9322-462f25a9d512" name="更改" comment="如何下载此系统并成功运行">
+    <list default="true" id="3f66cc7f-c119-4d49-9322-462f25a9d512" name="更改" comment="更新功能：用户不能删除自己">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad9df2da-57e7-4111-aa04-2301b62c131c.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad9df2da-57e7-4111-aa04-2301b62c131c.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/ad9df2da-57e7-4111-aa04-2301b62c131c/storage_v2/_src_/schema/usermanagesystem.H0NnFA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/ad9df2da-57e7-4111-aa04-2301b62c131c/storage_v2/_src_/schema/usermanagesystem.H0NnFA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/handlers/handlers.go" beforeDir="false" afterPath="$PROJECT_DIR$/handlers/handlers.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/3.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/logs/2025-04-11.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/2025-04-11.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/userModel.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/userModel.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/service/userService.go" beforeDir="false" afterPath="$PROJECT_DIR$/service/userService.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/logs/error.log" beforeDir="false" afterPath="$PROJECT_DIR$/logs/error.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +34,9 @@
     &quot;assignee&quot;: &quot;isPrisoner&quot;
   }
 }</component>
+  <component name="GitLabDefaultAccount">
+    <option name="defaultAccountId" value="8329b0cf-8df2-48ea-aafd-14b3079c2d03" />
+  </component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;git@github.com:isPrisoner/userManageSystem.git&quot;,
@@ -79,11 +76,12 @@
     &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;go.import.settings.migrated&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Go/userAdminRestful&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Go/siwu&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Go/userManageSystem/main.go&quot;
+    &quot;onboarding.tips.debug.path&quot;: &quot;D:/Go/userManageSystem/main.go&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.gitlab.GitLabSettingsConfigurable&quot;
   },
   &quot;keyToStringList&quot;: {
     &quot;DatabaseDriversLRU&quot;: [
@@ -154,7 +152,8 @@
     <MESSAGE value="整体前端页面和前端连接后端的端口API" />
     <MESSAGE value="完结简易用户管理系统基本功能已实现" />
     <MESSAGE value="如何下载此系统并成功运行" />
-    <option name="LAST_COMMIT_MESSAGE" value="如何下载此系统并成功运行" />
+    <MESSAGE value="更新功能：用户不能删除自己" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新功能：用户不能删除自己" />
   </component>
   <component name="VgoProject">
     <settings-migrated>true</settings-migrated>
